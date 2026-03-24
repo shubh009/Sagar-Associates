@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  ::selection {
+    background-color: #C9A96E;
+    color: #4A3728;
+  }
+  
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  /* Behance Style Elements */
+  .eyebrow {
+    @apply text-[#C9A96E] text-xs font-semibold tracking-[0.2em] uppercase block;
+  }
+  
+  .section-title {
+    @apply font-serif text-4xl md:text-5xl text-[#4A3728];
+  }
+  
+  /* Noise Overlay */
+  .noise-overlay {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.04;
+    pointer-events: none;
+  }
+  
+  /* Scroll Animations Target Classes */
+  .reveal-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.25, 0.1, 0.25, 1), transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+  
+  .reveal-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .delay-100 { transition-delay: 100ms; }
+  .delay-200 { transition-delay: 200ms; }
+  .delay-300 { transition-delay: 300ms; }
+
+  /* Premium Image Hover Transitions */
+  .portfolio-item img {
+    will-change: transform, filter;
+  }
+
+  /* Testimonial Horizontal Scroll Area Hiding Navbars */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  /* WhatsApp Pulse Animation */
+  @keyframes pulse {
+    0% { transform: scale(1); opacity: 0.8; }
+    100% { transform: scale(1.6); opacity: 0; }
+  }
+  
+  .pulse-ring {
+    animation: pulse 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  }
+
+  /* Success fade in logic */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .fade-in {
+    animation: fadeIn 0.5s ease forwards;
+  }
+
+  /* Before/After Transformation Slider */
+  .before-after-overlay {
+    clip-path: polygon(0 0, var(--position) 0, var(--position) 100%, 0 100%);
+  }
+  
+  .before-after-line {
+    left: var(--position);
+  }
+
+  /* Slow Pan Animation for image backgrounds */
+  @keyframes slowPan {
+    0% { transform: scale(1) translate(0, 0); }
+    50% { transform: scale(1.15) translate(-2%, 2%); }
+    100% { transform: scale(1) translate(0, 0); }
+  }
+  .animate-slow-pan {
+    animation: slowPan 30s ease-in-out infinite;
+  }
+}

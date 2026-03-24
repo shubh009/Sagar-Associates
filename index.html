@@ -103,12 +103,12 @@
 
   <!-- HERO SECTION -->
   <header class="relative w-full h-screen min-h-[700px] flex flex-col md:flex-row overflow-hidden">
-    <div class="w-full md:w-[55%] h-full flex flex-col justify-center px-6 md:pl-20 md:pr-10 z-10 pt-20 md:pt-0 pb-20 md:pb-0">
+    <div class="w-full md:w-[55%] h-full flex flex-col justify-center px-6 md:pl-20 md:pr-10 z-10 pt-28 md:pt-0 pb-40 md:pb-0">
       <div class="reveal-up">
         <span class="text-accent text-xs font-semibold tracking-[0.2em] uppercase mb-4 block inline-flex items-center gap-2">
           <span class="w-8 h-[1px] bg-accent"></span>Meerut's Premier Design Studio
         </span>
-        <h2 class="font-serif text-[3.5rem] md:text-[5.5rem] leading-[0.95] text-primary mb-6 md:mr-[-80px] z-20 relative mix-blend-normal isolate">
+        <h2 class="font-serif text-5xl md:text-[5.5rem] leading-[0.95] text-primary mb-6 md:mr-[-80px] z-20 relative mix-blend-normal isolate">
           We Design Spaces<br>That Tell Your Story.
         </h2>
         <p class="max-w-md text-muted text-base md:text-lg mb-10 font-light leading-relaxed relative z-20 bg-bg/50 md:bg-transparent p-2 md:p-0 rounded">
@@ -309,7 +309,7 @@
         <div id="panorama-viewer" class="w-full h-full bg-black"></div>
         
         <!-- Custom Controls Overlay -->
-        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-black/60 backdrop-blur-md px-6 py-3 rounded-full flex gap-6 items-center z-10 shadow-lg border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-black/60 backdrop-blur-md px-4 md:px-6 py-3 rounded-full flex gap-3 sm:gap-6 items-center z-10 shadow-[0_0_20px_rgba(0,0,0,0.5)] border border-white/10 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 w-[90%] sm:w-auto justify-center">
            <!-- Play/Pause -->
            <button id="pano-play-pause" class="text-white hover:text-accent transition-colors focus:outline-none" title="Play/Pause Rotation">
              <svg class="w-6 h-6 pano-icon-pause hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
@@ -334,17 +334,17 @@
       </div>
 
       <!-- Thumbnails -->
-      <div class="flex gap-4 mt-8 justify-center overflow-x-auto pb-4 scrollbar-hide reveal-up relative z-20">
-        <button class="pano-thumb w-32 aspect-[3/2] rounded-xl overflow-hidden border-2 border-accent relative group shrink-0 focus:outline-none" data-src="images/360-interior-work/sagar-associates-bedroom-interior-360.jpg">
+      <div class="flex gap-4 mt-8 justify-start md:justify-center overflow-x-auto pb-4 scrollbar-hide reveal-up relative z-20 snap-x snap-mandatory px-6 md:px-0">
+        <button class="pano-thumb w-28 md:w-32 aspect-[3/2] rounded-xl overflow-hidden border-2 border-accent relative group shrink-0 focus:outline-none snap-center" data-src="images/360-interior-work/sagar-associates-bedroom-interior-360.jpg">
           <img src="images/360-interior-work/sagar-associates-bedroom-interior-360.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform">
         </button>
-        <button class="pano-thumb w-32 aspect-[3/2] rounded-xl overflow-hidden border-2 border-transparent hover:border-accent/50 relative group shrink-0 transition-colors focus:outline-none" data-src="images/360-interior-work/sagar-associates-livingroom-interior-360.jpg.jpg">
+        <button class="pano-thumb w-28 md:w-32 aspect-[3/2] rounded-xl overflow-hidden border-2 border-transparent hover:border-accent/50 relative group shrink-0 transition-colors focus:outline-none snap-center" data-src="images/360-interior-work/sagar-associates-livingroom-interior-360.jpg.jpg">
           <img src="images/360-interior-work/sagar-associates-livingroom-interior-360.jpg.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform">
         </button>
-        <button class="pano-thumb w-32 aspect-[3/2] rounded-xl overflow-hidden border-2 border-transparent hover:border-accent/50 relative group shrink-0 transition-colors focus:outline-none" data-src="https://pannellum.org/images/alma.jpg">
+        <button class="pano-thumb w-28 md:w-32 aspect-[3/2] rounded-xl overflow-hidden border-2 border-transparent hover:border-accent/50 relative group shrink-0 transition-colors focus:outline-none snap-center" data-src="https://pannellum.org/images/alma.jpg">
           <img src="https://pannellum.org/images/alma.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform" alt="Virtual Sample 1">
         </button>
-        <button class="pano-thumb w-32 aspect-[3/2] rounded-xl overflow-hidden border-2 border-transparent hover:border-accent/50 relative group shrink-0 transition-colors focus:outline-none" data-src="https://pannellum.org/images/jure.jpg">
+        <button class="pano-thumb w-28 md:w-32 aspect-[3/2] rounded-xl overflow-hidden border-2 border-transparent hover:border-accent/50 relative group shrink-0 transition-colors focus:outline-none snap-center" data-src="https://pannellum.org/images/jure.jpg">
           <img src="https://pannellum.org/images/jure.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform" alt="Virtual Sample 2">
         </button>
       </div>
@@ -363,12 +363,12 @@
       <div class="relative w-full aspect-[4/3] md:aspect-[21/9] max-w-5xl mx-auto overflow-hidden reveal-up shadow-2xl before-after-container rounded-3xl" style="--position: 50%;">
         <!-- Before Image (Bottom Layer)  -->
         <div class="absolute inset-0 bg-cover bg-center grayscale-[20%]" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19480c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')">
-            <span class="absolute top-6 left-6 bg-primary text-white text-[12px] px-4 py-2 tracking-widest uppercase font-bold shadow-lg rounded-lg border border-white/20">Initial Site Work</span>
+            <span class="absolute top-4 left-4 md:top-6 md:left-6 bg-primary text-white text-[9px] md:text-[12px] px-3 py-1.5 md:px-4 md:py-2 tracking-widest uppercase font-bold shadow-lg rounded-lg border border-white/20">Initial Site Work</span>
         </div>
         
         <!-- After Image (Top Layer) -->
         <div class="absolute inset-0 bg-cover bg-center before-after-overlay" style="background-image: url('https://images.unsplash.com/photo-1627308595229-7830f5c95f9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')">
-            <span class="absolute top-6 right-6 bg-accent text-primary text-[12px] px-4 py-2 tracking-widest uppercase font-bold shadow-lg rounded-lg transition-all duration-75">Sagar Legacy Result</span>
+            <span class="absolute top-4 right-4 md:top-6 md:right-6 bg-accent text-primary text-[9px] md:text-[12px] px-3 py-1.5 md:px-4 md:py-2 tracking-widest uppercase font-bold shadow-lg rounded-lg transition-all duration-75">Sagar Legacy Result</span>
         </div>
         
         <!-- Slider Input Overlay -->

@@ -32,43 +32,124 @@
     }
   </script>
   <link rel="stylesheet" href="style.css">
+  
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Sagar Associates",
-    "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200",
-    "@id": "https://sagarassociates.com",
-    "url": "https://sagarassociates.com",
-    "telephone": "+91 99999 XXXXX",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "123 Design Avenue",
-      "addressLocality": "Meerut",
-      "addressRegion": "UP",
-      "postalCode": "250001",
-      "addressCountry": "IN"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 28.9845,
-      "longitude": 77.7064
-    },
-    "openingHoursSpecification": {
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "InteriorDesigner"],
+  "@id": "https://sagarassociates.co.in/#business",
+  "name": "Sagar Associates",
+  "alternateName": "Sagar Associates Agra",
+  "description": "Sagar Associates is a premier interior design and architecture firm in Agra, specializing in residential, commercial, office, and healthcare spaces across North India including Noida, Ghaziabad, and Gwalior.",
+  "url": "https://sagarassociates.co.in/",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://sagarassociates.co.in/images/sagar-associates-logo",
+    "width": "512",
+    "height": "512"
+  },
+  "image": [
+    "https://sagarassociates.co.in/images/Sagar-Associates-home-interiors-agra.png"
+  ],
+  "telephone": "+917088557506",
+  "email": "sagarpankaj06@gmail.com",
+  "priceRange": "₹₹₹",
+  "foundingDate": "2014-04-05",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Block No C-6, Shop No 4, First Floor, Sanjay Place",
+    "addressLocality": "Agra",
+    "addressRegion": "Uttar Pradesh",
+    "postalCode": "282002",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 27.1994,
+    "longitude": 78.0053
+  },
+  "openingHoursSpecification": [
+    {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
-      ],
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
       "opens": "10:00",
-      "closes": "19:00"
-    },
-    "sameAs": [
-      "https://facebook.com/sagarassociates",
-      "https://instagram.com/sagarassociates",
-      "https://youtube.com/sagarassociates"
+      "closes": "20:00"
+    }
+  ],
+  "areaServed": [
+    { "@type": "City", "name": "Agra", "sameAs": "https://en.wikipedia.org/wiki/Agra" },
+    { "@type": "City", "name": "Mathura", "sameAs": "https://en.wikipedia.org/wiki/Mathura" },
+    { "@type": "City", "name": "Vrindavan", "sameAs": "https://en.wikipedia.org/wiki/Vrindavan" },
+    { "@type": "City", "name": "Gwalior", "sameAs": "https://en.wikipedia.org/wiki/Gwalior" },
+    { "@type": "City", "name": "Ghaziabad", "sameAs": "https://en.wikipedia.org/wiki/Ghaziabad,_Uttar_Pradesh" },
+    { "@type": "City", "name": "Noida", "sameAs": "https://en.wikipedia.org/wiki/Noida" },
+    { "@type": "City", "name": "Bharatpur", "sameAs": "https://en.wikipedia.org/wiki/Bharatpur,_Rajasthan" },
+    { "@type": "Country", "name": "India" }
+  ],
+  "knowsAbout": [
+    "Interior Design",
+    "Home Interior Design",
+    "Commercial Interior Design",
+    "Architectural Services",
+    "Factory Interior Design",
+    "Clinic Interior Design"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Design Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Home Interior Design" }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Flat Interior Design" }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Office Interior Design" }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Clinic Interior Design" }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Architectural Design Services" }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Jewellery showroom interior design" }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Restaurant Interior Design" }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Hotel Interior Design" }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Rooftop Interior Design" }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Banquet Hall Interior Design" }
+      }
     ]
-  }
-  </script>
+  },
+  "sameAs": [
+    "https://www.instagram.com/sagarassociatesagra/",
+    "https://www.facebook.com/profile.php?id=61578554040795",
+    "https://in.pinterest.com/sagarassociatesagra",
+    "https://g.page/r/CS5pYbOL0jlKEBM/",
+    "https://www.homify.in/professionals/9984005/sagar-associates-best-interior-designer-in-agra"
+  ]
+}
+</script>
+
 </head>
 <body class="bg-bg text-primary font-sans antialiased overflow-x-hidden">
   
@@ -362,13 +443,15 @@
 
       <div class="relative w-full aspect-[4/3] md:aspect-[21/9] max-w-5xl mx-auto overflow-hidden reveal-up shadow-2xl before-after-container rounded-3xl" style="--position: 50%;">
         <!-- Before Image (Bottom Layer)  -->
-        <div class="absolute inset-0 bg-cover bg-center grayscale-[20%]" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19480c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')">
-            <span class="absolute top-4 left-4 md:top-6 md:left-6 bg-primary text-white text-[9px] md:text-[12px] px-3 py-1.5 md:px-4 md:py-2 tracking-widest uppercase font-bold shadow-lg rounded-lg border border-white/20">Initial Site Work</span>
+        <div class="absolute inset-0 bg-neutral-200">
+            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5" alt="Initial Site Work" loading="lazy" class="w-full h-full object-cover grayscale-[20%] pointer-events-none" />
+            <span class="absolute top-4 left-4 md:top-6 md:left-6 bg-primary text-white text-[9px] md:text-[12px] px-3 py-1.5 md:px-4 md:py-2 tracking-widest uppercase font-bold shadow-lg rounded-lg border border-white/20 z-10">Initial Site Work</span>
         </div>
         
         <!-- After Image (Top Layer) -->
-        <div class="absolute inset-0 bg-cover bg-center before-after-overlay" style="background-image: url('https://images.unsplash.com/photo-1627308595229-7830f5c95f9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')">
-            <span class="absolute top-4 right-4 md:top-6 md:right-6 bg-accent text-primary text-[9px] md:text-[12px] px-3 py-1.5 md:px-4 md:py-2 tracking-widest uppercase font-bold shadow-lg rounded-lg transition-all duration-75">Sagar Legacy Result</span>
+        <div class="absolute inset-0 before-after-overlay bg-neutral-200">
+            <img src="https://images.unsplash.com/photo-1627308595229-7830f5c95f9d" alt="Sagar Legacy Result" loading="lazy" class="w-full h-full object-cover pointer-events-none" />
+            <span class="absolute top-4 right-4 md:top-6 md:right-6 bg-accent text-primary text-[9px] md:text-[12px] px-3 py-1.5 md:px-4 md:py-2 tracking-widest uppercase font-bold shadow-lg rounded-lg transition-all duration-75 z-10">Sagar Legacy Result</span>
         </div>
         
         <!-- Slider Input Overlay -->

@@ -103,4 +103,14 @@
   .animate-slow-pan {
     animation: slowPan 30s ease-in-out infinite;
   }
+
+  /* Scrolled Sticky Header Navigation Pills Override */
+  #navbar[data-scrolled="true"] .nav-pill {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+  }
+  #navbar[data-scrolled="true"] .nav-pill .text-primary {
+    color: #ffffff !important;
+  }
 }

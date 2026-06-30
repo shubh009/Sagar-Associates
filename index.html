@@ -164,10 +164,34 @@
       <span class="font-sans text-[8px] text-accent font-bold tracking-[0.3em] uppercase mt-0.5 opacity-85 group-hover:opacity-100">Interior &middot; Architecture</span>
     </div>
     <div class="nav-pill hidden md:flex items-center gap-8 text-xs tracking-[0.15em] uppercase font-bold bg-white text-primary px-6 py-2 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.08)] border border-accent/20">
-      <a href="#services" class="relative text-primary hover:text-accent transition-colors after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-accent after:transition-all hover:after:w-full">Services</a>
+      
+      <!-- Services Dropdown -->
+      <div class="relative group cursor-pointer py-1">
+        <span class="relative text-primary hover:text-accent transition-colors flex items-center gap-1">
+          Services <i class="fa-solid fa-chevron-down text-[8px] transition-transform duration-300 group-hover:rotate-180"></i>
+        </span>
+        <div class="absolute top-[120%] left-1/2 -translate-x-1/2 w-48 bg-white border border-accent/20 rounded-2xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[999] text-left">
+          <a href="index.html#services" class="block px-4 py-2 text-xs text-[#4A3728] hover:bg-bg hover:text-accent transition-colors font-bold uppercase tracking-wider">Interior Design</a>
+          <a href="#" class="block px-4 py-2 text-xs text-[#4A3728] hover:bg-bg hover:text-accent transition-colors font-bold uppercase tracking-wider">Architect</a>
+          <a href="project-management-consultancy-pmc.html" class="block px-4 py-2 text-xs text-[#4A3728] hover:bg-bg hover:text-accent transition-colors font-bold uppercase tracking-wider">PMC Services</a>
+        </div>
+      </div>
+
       <a href="#portfolio" class="relative text-primary hover:text-accent transition-colors after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-accent after:transition-all hover:after:w-full">Portfolio</a>
       <a href="#about" class="relative text-primary hover:text-accent transition-colors after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-accent after:transition-all hover:after:w-full">About</a>
-      <a href="project-management-consultancy-pmc.html" class="relative text-primary hover:text-accent transition-colors after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-accent after:transition-all hover:after:w-full">PMC Services</a>
+
+      <!-- Locations Dropdown -->
+      <div class="relative group cursor-pointer py-1">
+        <span class="relative text-primary hover:text-accent transition-colors flex items-center gap-1">
+          Locations <i class="fa-solid fa-chevron-down text-[8px] transition-transform duration-300 group-hover:rotate-180"></i>
+        </span>
+        <div class="absolute top-[120%] left-1/2 -translate-x-1/2 w-40 bg-white border border-accent/20 rounded-2xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[999] text-left">
+          <a href="interior-designer-in-agra.html" class="block px-4 py-2 text-xs text-[#4A3728] hover:bg-bg hover:text-accent transition-colors font-bold uppercase tracking-wider">Agra</a>
+          <a href="interior-designer-in-vrindavan.html" class="block px-4 py-2 text-xs text-[#4A3728] hover:bg-bg hover:text-accent transition-colors font-bold uppercase tracking-wider">Vrindavan</a>
+          <a href="#" class="block px-4 py-2 text-xs text-[#4A3728] hover:bg-bg hover:text-accent transition-colors font-bold uppercase tracking-wider">Firozabad</a>
+        </div>
+      </div>
+
       <a href="contact-us.html" class="relative text-primary hover:text-accent transition-colors after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-accent after:transition-all hover:after:w-full">Contact</a>
       <a href="#enquiry" class="bg-accent text-primary px-6 py-2.5 font-bold hover:bg-primary hover:text-white hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 rounded-full text-[10px] tracking-widest shadow-md">Get Free Quote</a>
     </div>
@@ -177,13 +201,31 @@
   </nav>
 
   <!-- MOBILE MENU -->
-  <div id="mobile-menu" class="fixed inset-0 bg-primary z-[90] flex flex-col justify-center items-center gap-8 text-white opacity-0 pointer-events-none transition-opacity duration-300">
-      <a href="#services" class="mobile-link text-2xl font-serif hover:text-accent transition-colors">Services</a>
+  <div id="mobile-menu" class="fixed inset-0 bg-primary z-[90] flex flex-col justify-center items-center gap-6 text-white opacity-0 pointer-events-none transition-opacity duration-300">
+      
+      <div class="flex flex-col items-center gap-1">
+        <span class="text-xs uppercase tracking-[0.2em] text-accent font-bold">Services</span>
+        <div class="flex flex-col items-center gap-2">
+          <a href="index.html#services" class="mobile-link text-lg font-serif hover:text-accent transition-colors">Interior Design</a>
+          <a href="#" class="mobile-link text-lg font-serif hover:text-accent transition-colors">Architect</a>
+          <a href="project-management-consultancy-pmc.html" class="mobile-link text-lg font-serif hover:text-accent transition-colors">PMC Services</a>
+        </div>
+      </div>
+
       <a href="#portfolio" class="mobile-link text-2xl font-serif hover:text-accent transition-colors">Portfolio</a>
       <a href="#about" class="mobile-link text-2xl font-serif hover:text-accent transition-colors">About</a>
-      <a href="project-management-consultancy-pmc.html" class="mobile-link text-2xl font-serif hover:text-accent transition-colors">PMC Services</a>
       <a href="contact-us.html" class="mobile-link text-2xl font-serif hover:text-accent transition-colors">Contact</a>
-      <a href="#enquiry" class="mobile-link bg-accent text-primary px-8 py-4 font-medium mt-4 rounded-2xl">Get Free Quote</a>
+
+      <div class="flex flex-col items-center gap-2 mt-2">
+        <span class="text-xs uppercase tracking-[0.2em] text-accent font-bold">Locations</span>
+        <div class="flex gap-4">
+          <a href="interior-designer-in-agra.html" class="mobile-link text-lg font-serif hover:text-accent transition-colors">Agra</a>
+          <a href="interior-designer-in-vrindavan.html" class="mobile-link text-lg font-serif hover:text-accent transition-colors">Vrindavan</a>
+          <a href="#" class="mobile-link text-lg font-serif hover:text-accent transition-colors">Firozabad</a>
+        </div>
+      </div>
+
+      <a href="#enquiry" class="mobile-link bg-accent text-primary px-8 py-4 font-medium mt-2 rounded-2xl">Get Free Quote</a>
   </div>
 
   <!-- HERO SECTION -->
@@ -409,6 +451,68 @@
              <span>Know what makes us a <a href="/interior-designer-in-agra.html" class="text-accent hover:text-primary transition-colors underline decoration-1 underline-offset-4 font-bold">best interior designer in Agra</a></span>
            </p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCAL SEO CONTENT & LOCATIONS SECTION -->
+  <section class="py-16 md:py-24 px-6 md:px-12 bg-bg border-t border-accent/20">
+    <div class="max-w-7xl mx-auto reveal-up">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-accent text-xs font-semibold tracking-[0.2em] uppercase mb-4 block">Regional Presence</span>
+        <h2 class="font-serif text-3xl md:text-4xl text-primary leading-tight">Locations We Serve</h2>
+        <p class="text-muted font-light mt-4">Bringing premium interior design and execution services across Uttar Pradesh, customized for your lifestyle.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Agra Card -->
+        <div class="group relative bg-white border border-primary/5 rounded-[2rem] p-8 hover:-translate-y-2 transition-all duration-500 shadow-sm hover:shadow-xl hover:border-accent/30 flex flex-col justify-between min-h-[280px]">
+          <div>
+            <div class="w-12 h-12 rounded-full bg-primary/5 text-accent flex items-center justify-center mb-6 font-bold shadow-inner">01</div>
+            <h3 class="font-serif text-2xl text-primary font-bold mb-3">Agra</h3>
+            <p class="text-muted text-sm font-light leading-relaxed">Timeless luxury home interiors, modular kitchens, and turnkey commercial solutions in the Taj City.</p>
+          </div>
+          <a href="interior-designer-in-agra.html" class="w-full bg-primary text-white text-center py-3 rounded-xl text-xs font-bold tracking-wider uppercase group-hover:bg-accent group-hover:text-primary transition-all duration-300 mt-6 inline-block">Explore Agra &rarr;</a>
+        </div>
+
+        <!-- Vrindavan Card -->
+        <div class="group relative bg-white border border-primary/5 rounded-[2rem] p-8 hover:-translate-y-2 transition-all duration-500 shadow-sm hover:shadow-xl hover:border-accent/30 flex flex-col justify-between min-h-[280px]">
+          <div>
+            <div class="w-12 h-12 rounded-full bg-primary/5 text-accent flex items-center justify-center mb-6 font-bold shadow-inner">02</div>
+            <h3 class="font-serif text-2xl text-primary font-bold mb-3">Vrindavan</h3>
+            <p class="text-muted text-sm font-light leading-relaxed">Divine and modern interior combinations near Prem Mandir, Raman Reti, Chhatikara, and Sunrakh Road.</p>
+          </div>
+          <a href="interior-designer-in-vrindavan.html" class="w-full bg-primary text-white text-center py-3 rounded-xl text-xs font-bold tracking-wider uppercase group-hover:bg-accent group-hover:text-primary transition-all duration-300 mt-6 inline-block">Explore Vrindavan &rarr;</a>
+        </div>
+
+        <!-- Sadabad Card -->
+        <div class="group relative bg-white border border-primary/5 rounded-[2rem] p-8 hover:-translate-y-2 transition-all duration-500 shadow-sm hover:shadow-xl hover:border-accent/30 flex flex-col justify-between min-h-[280px]">
+          <div>
+            <div class="w-12 h-12 rounded-full bg-primary/5 text-accent flex items-center justify-center mb-6 font-bold shadow-inner">03</div>
+            <h3 class="font-serif text-2xl text-primary font-bold mb-3">Sadabad</h3>
+            <p class="text-muted text-sm font-light leading-relaxed">Premium home renovations, custom furniture layouts, and modular solutions designed for luxury properties.</p>
+          </div>
+          <a href="#" class="w-full bg-primary text-white text-center py-3 rounded-xl text-xs font-bold tracking-wider uppercase group-hover:bg-accent group-hover:text-primary transition-all duration-300 mt-6 inline-block">Explore Sadabad &rarr;</a>
+        </div>
+
+        <!-- Firozabad Card -->
+        <div class="group relative bg-white border border-primary/5 rounded-[2rem] p-8 hover:-translate-y-2 transition-all duration-500 shadow-sm hover:shadow-xl hover:border-accent/30 flex flex-col justify-between min-h-[280px]">
+          <div>
+            <div class="w-12 h-12 rounded-full bg-primary/5 text-accent flex items-center justify-center mb-6 font-bold shadow-inner">04</div>
+            <h3 class="font-serif text-2xl text-primary font-bold mb-3">Firozabad</h3>
+            <p class="text-muted text-sm font-light leading-relaxed">Modern modular false ceilings, elegant glass wardrobes, and premium turnkey interior designs.</p>
+          </div>
+          <a href="#" class="w-full bg-primary text-white text-center py-3 rounded-xl text-xs font-bold tracking-wider uppercase group-hover:bg-accent group-hover:text-primary transition-all duration-300 mt-6 inline-block">Explore Firozabad &rarr;</a>
+        </div>
+
+      </div>
+
+      <!-- Local SEO Text -->
+      <div class="mt-16 text-center max-w-4xl mx-auto border-t border-accent/20 pt-12">
+        <p class="text-muted font-light text-sm md:text-base leading-relaxed">
+          Our team is deeply connected with leading vendor networks in <strong>Mathura</strong>, <strong>Vrindavan</strong>, <strong>Firozabad</strong>, and <strong>Sadabad</strong>, managing on-site executions along <strong>Govardhan Road</strong>, <strong>Raman Reti</strong>, and core town zones. We deliver high-end, contemporary spaces directly aligned with your expectations.
+        </p>
       </div>
     </div>
   </section>
@@ -1029,7 +1133,7 @@
           <ul class="flex flex-col gap-3 text-sm text-white/70">
             <li><a href="interior-designer-in-agra.html" class="hover:text-white transition-colors" title="Best Interior Designer in Agra">Interior Designer in Agra</a></li>
             <li><a href="#" class="hover:text-white transition-colors" title="Best Interior Designer in Mathura">Interior Designer in Mathura</a></li>
-            <li><a href="#" class="hover:text-white transition-colors" title="Best Interior Designer in Vrindavan">Interior Designer in Vrindavan</a></li>
+            <li><a href="interior-designer-in-vrindavan.html" class="hover:text-white transition-colors" title="Best Interior Designer in Vrindavan">Interior Designer in Vrindavan</a></li>
             <li><a href="#" class="hover:text-white transition-colors" title="Best Interior Designer in Ghaziabad">Interior Designer in Ghaziabad</a></li>
           </ul>
         </div>
